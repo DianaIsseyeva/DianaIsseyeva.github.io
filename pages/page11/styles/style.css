@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: white;
+    color: #5C5C5C;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    box-shadow: 0 12px 35px rgba(160, 121, 0, 0.2);
+    padding: 20px 0;
+}
+
+.header-in {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav {
+    display: none;
+    background: white;
+    padding: 0 30px;
+    z-index: 1;
+    position: absolute;
+    top: 83px;
+    right: 0;
+}
+
+.toggle {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+
+.line {
+    border: 2px solid red;
+}
+
+.toggle:focus~.nav {
+    display: block;
+}
+
+.nav-item {
+    color: #FFC000;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.shopping {
+    background: url(../design/shopping.png) no-repeat;
+    width: 20px;
+    height: 17px;
+    display: inline-block;
+    margin: 0 20px 30px 0;
+    position: relative;
+}
+
+.shopping:after {
+    content: "12";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: 6px;
+    top: -10px;
+    right: -15px;
+    box-sizing: border-box;
+}
+
+.btn,
+.form-btn {
+    background: linear-gradient(229.9deg, #FFC000 1.55%, #FF8A00 95.8%);
+    box-shadow: 0 12px 35px rgba(160, 121, 0, 0.2);
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 30px;
+    width: 120px;
+}
+
+.content {
+    margin: 0 25px;
+}
+
+.content-title {
+    margin: 20px 0;
+    font-size: 23px;
+    line-height: 100%;
+    color: #FFC000;
+}
+
+.content-text {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 25px;
+}
+
+.invite {
+    font-size: 20px;
+    line-height: 90%;
+    color: #FFC000;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.input-item,
+.form-btn,
+.message {
+    max-width: 480px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #EFEFEF;
+    border-radius: 100px;
+    padding: 20px;
+    outline: none;
+}
+
+.message {
+    margin-bottom: 25px;
+    border-radius: 50px;
+    font-family: inherit;
+    color: inherit;
+}
+
+.footer {
+    margin-top: 100px;
+    background: #212121;
+}
+
+.footer-block,
+.policy {
+    padding: 30px;
+}
+
+.footer-text,
+.input-item,
+.message,
+::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5C5C5C;
+}
+
+.footer-text {
+    color: white;
+    margin: 10px 0;
+}
+
+.footer-block>.footer-text {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+.icon-fb {
+    background: url(../design/icon_fb.png) no-repeat;
+}
+
+.icon-twitter {
+    background: url(../design/icon_twitter.png) no-repeat;
+}
+
+.icon-youtube {
+    background: url(../design/icon_youtube.png) no-repeat;
+}
+
+.icon-dribbble {
+    background: url(../design/icon_dribbble.png) no-repeat;
+}
+
+.footer-block-in {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.footer-faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.policy {
+    background: black;
+    color: white;
+    font-size: 12px;
+}
+
+.policy-block-in {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy-policy {
+    margin-bottom: 10px;
+}
+
+.policy-credit {
+    color: #FFC000;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+    .footer-block,
+    .policy {
+        flex-basis: 50%;
+        padding: 15px 10px 15px 0;
+    }
+
+    .footer-block:first-child {
+        flex-basis: 35%;
+        margin-right: auto;
+    }
+
+    .policy-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .policy-block-in {
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: space-between;
+    }
+
+    .privacy-policy {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .toggle {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .shopping {
+        margin-bottom: 0;
+    }
+
+    .nav-item {
+        position: relative;
+        margin-bottom: 0;
+        margin-right: 25px;
+        padding: 10px;
+    }
+
+    .btn {
+        margin-bottom: 0;
+        margin-left: 10px;
+        margin-right: 0;
+        padding: 14px 10px;
+    }
+
+    .content {
+        margin-left: 120px;
+    }
+
+    .content-title {
+        font-size: 44px;
+        line-height: 150%;
+    }
+
+    .content-text {
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    .invite {
+        font-size: 40px;
+        line-height: 150%;
+    }
+
+    .nav-item:hover:after {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 3px;
+        margin: 0 auto;
+        background: linear-gradient(229.9deg, #FFC000 1.55%, #FF8A00 95.8%);
+        border-radius: 3px;
+    }
+
+    .footer-block:first-child {
+        flex-basis: 20%;
+        margin-right: auto;
+    }
+
+    .footer-block:nth-child(2n) {
+        flex-basis: 22%;
+    }
+
+    .footer-block {
+        flex-basis: 27%;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wrap .footer-text {
+        margin-top: 20px;
+    }
+
+    .footer-faq {
+        position: relative;
+        top: 53%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .nav-item {
+        margin-right: 4%;
+    }
+
+    .nav {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .btn {
+        width: 160px;
+        padding: 14px 25px;
+    }
+}

@@ -1,0 +1,35 @@
+.navbar-bg {
+    background: rgb(180, 232, 241);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.icon-check::before {
+    content: url(../design/check.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 13px;
+    margin-left: 20px;
+}
+
+.icon-gift::before {
+    content: url(../design/gift.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 11px;
+    margin-left: 20px;
+}
+
+.icon-compass::before {
+    content: url(../design/compass.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    margin-left: 20px;
+}

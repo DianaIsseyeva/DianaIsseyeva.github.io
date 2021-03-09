@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Create user</h1>
+        <table class="table background_table">
+            <caption>
+                <p> user info list</p>
+            </caption>
+        </table>
+        <form class="background_form">
+            <h2 class="field">Personal info</h2>
+            <div class="row">
+                <div class="block_title">
+                    <h3 class="field_title">Title</h3>
+                    <div class="radio_group">
+                        <label class="radio">
+                            <input class="radio_text" type="radio" name="gender" required>
+                            <span class="common border_mr"> Mr </span>
+                        </label>
+                        <label class="radio">
+                            <input class="radio_text" type="radio" name="gender" required>
+                            <span class="common border_mrs"> Mrs </span>
+                        </label>
+                        <label class="radio">
+                            <input class="radio_text" type="radio" name="gender" required>
+                            <span class="common border_div"> Div </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">First name</h3>
+                    <label>
+                        <input class="common large" type="text" placeholder="Enter first name" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">Last name</h3>
+                    <label>
+                        <input class="common large" type="text" placeholder="Enter last name" required>
+                    </label>
+                </div>
+            </div>
+            <h2 class="field">Location</h2>
+            <div class="row">
+                <div class="block_title">
+                    <h3 class="field_title">Street</h3>
+                    <label>
+                        <input class="common large" type="text" placeholder="Enter street" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">Building</h3>
+                    <label>
+                        <input class="common small" type="number" placeholder="#" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">Apartment</h3>
+                    <label>
+                        <input class="common small" type="number" placeholder="#" required>
+                    </label>
+                </div>
+            </div>
+            <h2 class="field">Contacts</h2>
+            <div class="row">
+                <div class="block_title">
+                    <h3 class="field_title">Mobile</h3>
+                    <label>
+                        <input class="common middle" type="tel" placeholder="+XX XX XX XX XXX" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">Email</h3>
+                    <label>
+                        <input class="common middle" type="email" placeholder="Enter email address" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_tel">Tel</h3>
+                    <label>
+                        <input class="common middle" type="tel" placeholder="XXXX XX XX XX">
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_tel">Fax</h3>
+                    <label>
+                        <input class="common middle" type="tel" placeholder="XXXX XX XX XX">
+                    </label>
+                </div>
+            </div>
+            <h2 class="field">Credentials setting</h2>
+            <div class="row">
+                <div class="block_title">
+                    <h3 class="field_title">Enter password</h3>
+                    <label>
+                        <input class="common middle" type="password" placeholder="New password" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">Confirm password</h3>
+                    <label>
+                        <input class="common middle" type="password" placeholder="Confirm new password" required>
+                    </label>
+                </div>
+                <div class="block_title">
+                    <h3 class="field_title">Add login</h3>
+                    <label>
+                        <input class="common middle" type="text" placeholder="Create login" required>
+                    </label>
+                </div>
+            </div>
+            <div class="position_btn">
+                <button class="common btn" type="submit">Create</button>
+                <button class="common btn" type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

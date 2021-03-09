@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0 23px;
+    align-items: center;
+}
+
+.logo {
+    background: url(../design/logo.png) 0 9px no-repeat;
+    width: 75px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.toggle {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: flex-end;
+    cursor: pointer;
+
+    &_line {
+        border: 2px solid #6F7E9E;
+    }
+}
+
+.toggle:focus~.nav {
+    display: block;
+}
+
+.nav {
+    display: none;
+    background: white;
+    padding: 0 10px;
+    z-index: 5;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    bottom: 0;
+
+    &_item {
+        @include text(15px, bold, 18px, inherit, none);
+        display: block;
+        padding: 20px 0;
+        margin: 15px 0;
+        z-index: 5;
+    }
+}

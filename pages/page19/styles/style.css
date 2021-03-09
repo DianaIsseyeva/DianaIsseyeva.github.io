@@ -1,0 +1,26 @@
+.btn {
+    margin-right: 15px;
+    padding: 10px;
+    background: rgb(120, 235, 120);
+    border-color: rgb(16, 148, 71);
+}
+
+.btn:hover {
+    background: blue;
+}
+
+#infoBank {
+    border: 1px solid black;
+    background: rgb(228, 228, 228);
+    display: inline-block;
+    padding: 10px 130px 10px 10px;
+    box-sizing: border-box;
+}
+
+.coin_initial {
+    color: red;
+}
+
+.current_coin {
+    color: blue;
+}

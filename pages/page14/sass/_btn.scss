@@ -1,0 +1,45 @@
+.btn,
+.btn-header {
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    outline: none;
+    color: white;
+    padding: 12px 60px 12px 12px;
+    cursor: pointer;
+    @include text(14px, bold, 17px, white, uppercase);
+    position: relative;
+}
+
+.btn:hover {
+    background: white;
+    color: rgb(2, 23, 71);
+}
+
+.btn:hover::after {
+    background: url(../design/arrow_right_hover.svg) no-repeat;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../design/arrow_right.svg) no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 9px;
+}
+
+.btn-wide {
+    max-width: 380px;
+    width: 100%;
+    text-align: left;
+}
+
+.btn-header {
+    display: none;
+    background: #021747;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: 48px;
+}

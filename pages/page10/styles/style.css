@@ -1,0 +1,259 @@
+.card {
+    background: darkblue;
+    border: 1px solid black;
+    max-width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    animation: sky 7s ease-out 1 alternate both,
+        dissapear 1s ease-out 7s 1 both;
+}
+
+.star {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    animation: blink 1s ease-in-out infinite alternate;
+    position: absolute;
+}
+
+.star-1 {
+    top: 35%;
+    right: 6%;
+    animation-delay: 1s;
+}
+
+.star-2 {
+    top: 30%;
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.star-3 {
+    top: 7%;
+    right: 40%;
+    animation-delay: 2s;
+}
+
+
+.star-4 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.star-5 {
+    top: 15%;
+    left: 42%;
+    animation-delay: 2s;
+}
+
+.star-6 {
+    top: 27%;
+    left: 67%;
+    animation-delay: 1s;
+}
+
+.star-7 {
+    top: 22%;
+    left: 8%;
+    animation-delay: 5s;
+}
+
+.star-8 {
+    top: 0;
+    left: -3%;
+    background: white;
+    box-shadow: 0 0 10px 10px rgb(248, 248, 236);
+    animation: fall-star 5s ease-in 3s 1 alternate;
+}
+
+.blink-normal {
+    animation-duration: 1s;
+}
+
+.blink-fast {
+    animation-duration: .7s;
+}
+
+.blink-slow {
+    animation-duration: 1.6s;
+}
+
+.moon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(240, 235, 235);
+    box-shadow: 0 0 20px 10px rgb(250, 249, 249);
+    position: absolute;
+    top: 30px;
+    right: 7%;
+}
+
+.wish {
+    text-transform: uppercase;
+    font-family: "Kaushan Script", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 0px rgb(83, 94, 77);
+    color: rgb(218, 194, 250);
+    position: absolute;
+    bottom: 0;
+    animation: word 5s ease-in 1 alternate both;
+    z-index: 1;
+}
+
+.mountain-1 {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 300px solid rgb(49, 71, 65);
+    position: absolute;
+    bottom: 0;
+    left: -4%;
+}
+
+.mountain-2 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 250px solid rgb(21, 66, 9);
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+}
+
+.mountain-3 {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 180px solid rgb(78, 94, 74);
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+.home {
+    width: 40px;
+    height: 120px;
+    background: rgb(66, 65, 65);
+    position: absolute;
+    left: 83%;
+    bottom: 0;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.home_in {
+    position: relative;
+}
+
+.window {
+    width: 12px;
+    height: 12px;
+    background: darkgrey;
+    position: absolute;
+    animation: window_light 5s ease-in infinite both;
+}
+
+.window-1 {
+    left: 5px;
+    top: 0;
+    animation-delay: 1s;
+}
+
+.window-2 {
+    right: 5px;
+    top: 0;
+    animation-delay: 1s;
+}
+
+.window-3 {
+    left: 5px;
+    top: 30px;
+    animation-delay: 3s;
+}
+
+.window-4 {
+    right: 5px;
+    top: 30px;
+    animation-delay: 2s;
+}
+
+.window-5 {
+    left: 5px;
+    top: 60px;
+    animation-delay: 1s;
+}
+
+.window-6 {
+    right: 5px;
+    top: 60px;
+    animation-delay: 2s;
+}
+
+@keyframes window_light {
+    0% {
+        background: rgb(66, 53, 53);
+    }
+
+    50% {
+        background: white;
+    }
+}
+
+@keyframes dissapear {
+    100% {
+        transform: scale(0) rotate(540deg);
+    }
+}
+
+@keyframes word {
+    0% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes sky {
+    0% {
+        background: rgb(178, 181, 209);
+    }
+
+    100% {
+        background: rgb(2, 2, 117);
+    }
+}
+
+@keyframes blink {
+    0% {
+        background: white;
+        box-shadow: 0 0 4px 4px rgb(248, 248, 236);
+        transform: scale(1);
+    }
+
+    100% {
+        background: white;
+        box-shadow: 0 0 6px 6px rgb(248, 248, 236);
+        transform: scale(1.5);
+    }
+}
+
+@keyframes fall-star {
+    0% {
+        transform: translateX(-1%) rotate(0);
+    }
+
+    100% {
+        transform: rotate(5deg) translate(800px, 200px);
+    }
+}

@@ -1,0 +1,28 @@
+.margin_container {
+    margin-top: 25px;
+}
+
+.width_input {
+    width: 200px;
+}
+
+.margin_input,
+.margin_user {
+    margin-left: 20px;
+}
+
+.border_input {
+    border-color: blue;
+    margin-right: 10px;
+    box-shadow: 0 0 0 4px rgba(153, 168, 233, 0.5);
+}
+
+.row {
+    display: flex;
+}
+
+.card-size {
+    width: 30%;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}

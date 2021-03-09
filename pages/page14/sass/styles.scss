@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #6A7798;
+}
+
+@import 'link';
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@mixin text($font-size, $font-weight, $line-height, $color, $text-transform) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color;
+    text-transform: $text-transform;
+}
+
+@import 'header';
+
+@import 'btn';
+
+.current {
+    display: flex;
+    margin-bottom: 26px;
+
+    &_slash {
+        margin: 0 15px;
+    }
+
+    &_info {
+        @include text(14px, 600, 17px, #021747, none);
+    }
+}
+
+.title {
+    @include text(32px, 900, 39px, #021747, uppercase);
+    margin-bottom: 16px;
+    margin-top: 30px;
+}
+
+.title-white,
+.title_1920 {
+    display: none;
+}
+
+.line {
+    background: #6F7E9E;
+    height: 1px;
+    margin-bottom: 26px;
+}
+
+.text {
+    @include text(16px, normal, 30px, inherit, none);
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-bottom: 30px;
+    position: relative;
+
+    &_text {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        right: 5px;
+        z-index: 5;
+    }
+
+    &_title {
+        @include text(32px, 700, 39px, white, none);
+        margin-bottom: 8px;
+    }
+
+    &_subtitle {
+        @include text(16px, 500, 20px, white, none);
+    }
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.img_block::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+}
+
+.card:hover .img_block {
+    filter: blur(4px);
+}
+
+@import 'feedback';
+
+.platform {
+    display: flex;
+    flex-direction: column;
+    margin-right: 22px;
+}
+
+.clutch {
+    display: flex;
+    margin-bottom: 26px;
+
+    &_logo {
+        width: 37px;
+        height: 37px;
+        background: url(../design/clutch.png) no-repeat;
+    }
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+
+    &_text {
+        @include text(14px, normal, 16px, #5F6E72, uppercase);
+    }
+
+    &_number {
+        @include text(20px, 500, 24px, #0D0D0D, none);
+    }
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.star-white {
+    background: url(../design/white_star.svg);
+}
+
+.star-green {
+    background: url(../design/green_star.svg);
+}
+
+.star-green:last-child {
+    position: relative;
+}
+
+.star-green:last-child::after {
+    content: "";
+    display: inline-block;
+    background: url(../design/arrow.svg) no-repeat;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+.glassdoor {
+    display: flex;
+    margin-bottom: 56px;
+
+    &_logo {
+        width: 26px;
+        height: 37px;
+        background: url(../design/glassdoor.png);
+    }
+}
+
+@import 'footer';
+
+@import 'media';

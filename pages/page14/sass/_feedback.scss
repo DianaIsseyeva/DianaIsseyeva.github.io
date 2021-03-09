@@ -1,0 +1,55 @@
+.feedback {
+    background: #021747;
+    padding: 25px 16px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+        @include text(19px, 900, 23px, white, uppercase);
+        margin-bottom: 30px;
+        letter-spacing: 0.2em;
+    }
+}
+
+.input_item {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-family: inherit;
+}
+
+::placeholder {
+    @include text(14px, 500, 18px, #6A7798, none);
+    opacity: 0.5;
+}
+
+.label {
+    display: block;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-check::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.label input:checked+.text-check::before {
+    content: "";
+    display: inline-block;
+    background: url(../design/checkbox.png) center no-repeat;
+    cursor: pointer;
+}

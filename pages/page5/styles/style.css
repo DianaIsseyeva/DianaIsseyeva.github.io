@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mplus", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: #776C82;
+}
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    color: #30124E;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo,
+.menu_link,
+.tel,
+.footer_menu_link,
+.mail_footer,
+.footer_tel {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.menu_link,
+.tel {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.menu {
+    flex-basis: 100%;
+    order: 1;
+}
+
+.menu_link {
+    display: block;
+    border-bottom: 1px solid pink;
+}
+
+.tel {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    background: url(../design/icon_phone.svg) no-repeat;
+}
+
+.burger_btn {
+    display: inline-block;
+    padding: 16px 14px;
+    background: url(../design/icon_burger.svg) center no-repeat;
+}
+
+.promo {
+    background: url(../design/promo_pic.jpg) center no-repeat;
+    background-size: 100%;
+}
+
+.promo_block {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 10px;
+}
+
+.promo_title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #F61067;
+}
+
+.promo_text {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.map:hover {
+    background: rgb(181, 205, 231) url(../design/map.png) no-repeat;
+    background-size: 100%;
+}
+
+.intro {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.intro_title {
+    font-size: 7px;
+    line-height: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #F61067;
+    letter-spacing: 6px;
+}
+
+.intro_text {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #30233D;
+    margin-bottom: 20px;
+}
+
+.intro_number_block {
+    text-align: center;
+}
+
+.nobel {
+    font-size: 12px;
+    line-height: 26px;
+    color: #30233D;
+    letter-spacing: 6px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.number {
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: 900;
+}
+
+.red {
+    color: #F61067;
+}
+
+.blue {
+    color: #5E239D;
+}
+
+.green {
+    color: #00F0B5;
+}
+
+.services {
+    margin-top: 35px;
+    text-align: center;
+    color: #30233D;
+}
+
+.services_title {
+    font-size: 35px;
+    line-height: 33px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services_text {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20px;
+}
+
+.column_title {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.column_text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.column {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.icon {
+    padding: 26px 37px;
+}
+
+.ax_icon {
+    background: url(../design/ax.png) no-repeat;
+}
+
+.ax_title {
+    color: #00F0B5;
+}
+
+.ellipce_icon {
+    background: url(../design/ellipse.png) no-repeat;
+}
+
+.ellipce_title {
+    color: #F61067;
+}
+
+.castle_icon {
+    background: url(../design/castle.png) no-repeat;
+}
+
+.castle_title {
+    color: #F67110;
+}
+
+.balance_icon {
+    background: url(../design/balance.png) no-repeat;
+}
+
+.bowls_icon {
+    background: url(../design/bowls.png) no-repeat;
+}
+
+.brain_icon {
+    background: url(../design/brain.png) no-repeat;
+}
+
+.card {
+    margin-top: 40px;
+}
+
+.card_block {
+    padding: 0 0 0 10px;
+}
+
+.card_number {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    color: #F61067;
+    font-weight: 800;
+}
+
+.card_text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #776C82;
+}
+
+.card_pic {
+    width: 100%;
+}
+
+.faces {
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.gallery {
+    margin-top: 70px;
+}
+
+.gallery_block {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    color: #30233D;
+}
+
+.gallery_girl {
+    left: 35%;
+    bottom: 150%;
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+}
+
+.quote {
+    z-index: 2;
+    left: 47%;
+    bottom: 137%;
+    width: 6%;
+    position: absolute;
+}
+
+.position_arrow {
+    position: relative;
+    bottom: 60px;
+}
+
+.arrow_left {
+    left: -30%;
+}
+
+.arrow_right {
+    right: -30%;
+}
+
+.arrow_gallery {
+    width: 6%;
+}
+
+.gallery_text {
+    font-size: 15px;
+    line-height: 20px;
+    font-style: italic;
+    padding: 0 20%;
+    position: absolute;
+    top: -10px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 800;
+    color: #F61067;
+}
+
+.company {
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    right: 20%;
+}
+
+.newsletter {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.mail {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 5%;
+    position: relative;
+
+}
+
+.enter_email {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9B94A3;
+    border: none;
+    font-weight: 800;
+}
+
+.subscribe {
+    font-size: 10px;
+    line-height: 26px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #F61067;
+    border: none;
+    background: url(../design/arrow.png) no-repeat;
+    background-position: 94% 9px;
+    background-size: 15%;
+    padding: 5px 31px 0 0;
+}
+
+.border {
+    width: 90%;
+    border-top: 3px solid #F4F4ED;
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 40px;
+    background: #150433;
+    color: #FCFCFC;
+    padding: 40px 0;
+}
+
+.footer_column {
+    margin-top: 10px;
+}
+
+.lopper {
+    margin-bottom: 20px;
+}
+
+.lopper_title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.lopper_text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.footer_title {
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer_border {
+    border-bottom: 1px solid #F61067;
+}
+
+.footer_border_menu {
+    width: 20%;
+}
+
+.footer_border_services {
+    width: 35%;
+}
+
+.footer_border_contact {
+    width: 48%;
+}
+
+.footer_menu_link {
+    display: block;
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.mail_footer {
+    display: block;
+    padding: 0 0 0 20px;
+    background: url(../design/mail.png) no-repeat;
+    background-position: 0;
+    line-height: 30px;
+}
+
+.footer_tel {
+    display: block;
+    padding: 0 0 0 20px;
+    background: url(../design/tel_footer.png) no-repeat;
+    background-position: 0;
+    line-height: 30px;
+}
+
+.icon_footer {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 12px;
+}
+
+.twitter {
+    background: url(../design/twitter.png) no-repeat;
+}
+
+.fb {
+    background: url(../design/fb.png) no-repeat;
+}
+
+.instagram {
+    background: url(../design/instagram.png) no-repeat;
+}
+
+.youtube {
+    background: url(../design/youtube.png) no-repeat;
+}
+
+.medium {
+    background: url(../design/m.png) no-repeat;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+@media screen and (min-width: 400px) {
+    .logo {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .menu_link,
+    .tel {
+        letter-spacing: 2px;
+    }
+
+    .column {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .column_title {
+        padding-top: 0;
+    }
+
+    .column_block {
+        min-width: 200px;
+        text-align: left;
+        padding: 5px 10px;
+    }
+
+    .icon {
+        background-position: 5% 10px;
+    }
+
+    .card_block {
+        padding: 0 10px;
+    }
+
+    .gallery {
+        margin-top: 130px;
+    }
+
+    .gallery_block {
+        padding-top: 70px;
+    }
+
+    .gallery_girl {
+        width: 35%;
+        left: 33%;
+        bottom: 153%;
+    }
+
+    .quote {
+        left: 48%;
+        bottom: 140%;
+    }
+
+    .company {
+        margin-top: 0;
+    }
+
+    .enter_email {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .subscribe {
+        font-size: 12px;
+        letter-spacing: 4px;
+        background-position: 97% 7px;
+    }
+
+    .row_footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_column {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex-basis: 50%;
+        margin-top: 60px;
+    }
+
+    .intro {
+        margin-top: 108px;
+        text-align: center;
+        padding: 0 20%;
+    }
+
+    .intro_title {
+        font-size: 12px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .intro_text {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .services {
+        padding: 0 15%;
+        margin-top: 50px;
+    }
+
+    .card_block {
+        padding: 0 15px 0 10px;
+    }
+
+    .card_number {
+        font-size: 18px;
+        line-height: 37px;
+    }
+
+    .card_text {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .card_row {
+        display: flex;
+    }
+
+    .card_pic {
+        max-width: 50%;
+    }
+
+    .gallery_block {
+        padding-top: 90px;
+    }
+
+    .gallery {
+        margin-top: 170px;
+    }
+
+    .arrow_gallery {
+        width: 4%;
+    }
+
+    .gallery_text {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .company {
+        margin-top: 20px;
+        font-size: 14px;
+        top: 85%;
+    }
+
+    .mail {
+        padding: 5px 15%;
+    }
+
+    .border {
+        width: 66%;
+        left: 17%;
+    }
+
+    .lopper_title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .lopper_text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footer_border_services {
+        width: 33%;
+    }
+
+    .footer_border_contact {
+        width: 43%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        padding: 60px 0 36px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .menu {
+        flex-basis: auto;
+        order: 0;
+    }
+
+    .menu_link {
+        display: inline-block;
+        border-bottom: none;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .promo_title {
+        font-size: 54px;
+        line-height: 80px;
+    }
+
+    .promo_text {
+        font-size: 18px;
+        line-height: 37px;
+    }
+
+    .intro_number {
+        margin-top: 129px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nobel {
+        font-size: 12px;
+        line-height: 26px;
+        color: #30233D;
+        text-transform: uppercase;
+    }
+
+    .number {
+        font-size: 99px;
+        line-height: 117px;
+    }
+
+    .services {
+        margin-top: 182px;
+        padding: 0 25%;
+    }
+
+    .services_title {
+        font-size: 45px;
+        line-height: 66px;
+    }
+
+    .services_text {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .column {
+        flex-basis: 33.33%;
+        display: block;
+        text-align: left;
+        margin-top: 70px;
+    }
+
+    .column_block {
+        padding: 0 60px 0 0;
+    }
+
+    .icon {
+        background-position: 5% 0;
+    }
+
+    .column_title {
+        padding: 30px 0 15px;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card_block {
+        padding: 0 8%;
+    }
+
+    .change_order {
+        order: -1;
+    }
+
+    .gallery {
+        margin-top: 200px;
+    }
+
+    .gallery_block {
+        top: -80px;
+    }
+
+    .gallery_girl {
+        left: 33%;
+        bottom: 110%;
+    }
+
+    .quote {
+        top: -40%;
+    }
+
+    .gallery_text {
+        padding-top: 65px;
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .company {
+        margin-top: 55px;
+        font-size: 14px;
+        top: 85%;
+    }
+
+    .enter_email {
+        font-size: 18px;
+    }
+
+    .border {
+        width: 58%;
+        left: 21%;
+    }
+
+    .footer {
+        padding: 80px 0;
+    }
+
+    .footer_border_menu {
+        width: 52%;
+    }
+
+    .footer_border_services {
+        width: 98%;
+    }
+
+    .footer_border_contact {
+        width: 52%;
+    }
+
+    .flex_footer {
+        display: flex;
+    }
+
+    .row_footer {
+        flex-basis: 100%;
+    }
+
+    .lopper {
+        margin-right: 90px;
+    }
+
+    .lopper_title {
+        font-size: 24px;
+        line-height: 43px;
+    }
+
+    .lopper_text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .footer_title {
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 4px;
+    }
+
+    .footer_menu_link {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .footer_column {
+        flex-basis: 35%;
+    }
+
+    .footer_menu_block {
+        flex-basis: 12%;
+    }
+
+    .footer_menu_services {
+        flex-basis: 12%;
+        margin-right: auto;
+    }
+
+    .mail_footer {
+        background-position: 0 10px;
+    }
+
+    .copyright {
+        margin-left: 285px;
+    }
+}
+
+@media screen and (min-width: 1146px) {
+    .container {
+        max-width: 1146px;
+    }
+
+    .column_block {
+        padding: 0 80px 0 0;
+    }
+
+    .column {
+        margin-top: 100px;
+    }
+}

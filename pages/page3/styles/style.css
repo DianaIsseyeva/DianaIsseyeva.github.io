@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.main {
+    background: url(../design/bg-circles-full.jpg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    background: url(../design/logo.png) no-repeat;
+    width: 104px;
+    height: 38px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav {
+    margin: 25px 10px;
+}
+
+.nav_menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.join_position {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 22%;
+    padding-left: 30%;
+}
+
+.join_title {
+    font-weight: normal;
+}
+
+.join_text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.btn_join {
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.content {
+    padding: 40px 75px 85px;
+}
+
+.content_title {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content_text {
+    color: #000;
+    padding-bottom: 40px;
+    line-height: 1.8;
+}
+
+.green_background {
+    background: #2D5F3A;
+}
+
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.33%;
+}
+
+.green_background_text {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.btn_position {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.btn_green_background {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0 10px;
+    background: #1D3924;
+}
+
+.seo {
+    padding: 30px;
+}
+
+.icon_seo {
+    background: url(../design/ic-stat.png) 0 60% no-repeat;
+    padding: 10px 20px 10px 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.responsive {
+    background: #F74C55;
+    padding: 30px;
+}
+
+.icon_responsive {
+    background: url(../design/ic-screen.png) no-repeat;
+    padding: 10px 20px 10px 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn_red_fon {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0 10px;
+    background: #C33B40;
+}
+
+.cloud {
+    padding: 30px;
+}
+
+.icon_cloud {
+    background: url(../design/ic-cloud.png) 0 20% no-repeat;
+    padding: 10px 20px 10px 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nature {
+    background: url(../design/bg-nature.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 13%;
+    text-align: center;
+}
+
+.nature_p {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 45%;
+    padding-bottom: 30px;
+}
+
+.btn_nature {
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.brick_repeat {
+    background: url(../design/bg-bricks.jpg) repeat-x;
+    background-position: left bottom;
+    height: 10px;
+}
+
+.footer_text {
+    color: #1D3924;
+    text-align: center;
+    padding: 20px 0 30px;
+}

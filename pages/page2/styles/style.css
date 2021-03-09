@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 212px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 22px;
+    color: #333;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: inherit;
+}
+
+.promo {
+    background: url(../images/image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25% 0;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: inherit;
+    font-weight: normal;
+}
+
+.promo p {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_block {
+    background: #f1efec;
+    width: 34.45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate_block {
+    background: #9b242d;
+    width: 34.45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sign_block {
+    background: #46a651;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 60px;
+    padding-left: 80px;
+}
+
+.sign_p {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.btn {
+    background: #348e3e;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: inherit;
+    padding: 20px 30px;
+}
+
+.grass {
+    width: 672px;
+}
+
+.facebook_block {
+    background: #3b5997;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook_text {
+    margin-top: 20px;
+}
+
+.nav_footer {
+    background: #373838;
+    padding: 55px 70px;
+}
+
+.nav_footer a {
+    text-decoration: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 22px;
+    color: #939393;
+}

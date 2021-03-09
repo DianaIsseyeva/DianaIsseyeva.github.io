@@ -1,0 +1,44 @@
+.footer {
+    border-top: 1px solid #D5DAE6;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 34px 0 54px;
+
+    &_item {
+        width: 16px;
+        height: 16px;
+    }
+
+    &_item-rss {
+        background: url(../design/rss.png) no-repeat;
+    }
+
+    &_item-github {
+        background: url(../design/github.png) no-repeat;
+    }
+
+    &_item-linkedin {
+        background: url(../design/linkedin.png) no-repeat;
+    }
+
+    &_hidden {
+        display: none;
+    }
+}
+
+.copyright {
+    @include text(12px, 500, 16px, white, none);
+    padding: 17px 0;
+    background: #00091D;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.figure,
+.dress {
+    display: none;
+}
